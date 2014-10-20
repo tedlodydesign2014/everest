@@ -1,0 +1,170 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+@import 'https://fonts.googleapis.com/css?family=Oxygen:300';
+
+/* theme: Everest - ocean */
+
+
+//
+// General
+//
+
+@global-background: #262f3a;
+@global-border: #374352;
+
+//
+// Typography
+//
+
+@global-color: #ffffff;
+@global-muted-color: #8c939b;
+@global-link-color: #52b2d8;
+@global-link-hover-color: #52b2d8;
+@global-primary-color: #52b2d8;
+@global-secondary-color: #fbbe3b;
+@global-heading-color: #ffffff;
+@global-text-shadow: rgba(0, 0, 0, 0);
+@base-body-font-family: 'Open Sans';
+@base-body-font-weight: 300;
+@base-heading-font-family: 'Oxygen';
+@base-heading-font-weight: 300;
+@navbar-nav-font-family: 'Open Sans';
+
+//
+// Backgrounds
+//
+
+@global-light-background: #313a44;
+@global-default-gradient-top: #52b2d8;
+@global-default-gradient-bottom: #44a2c7;
+@global-primary-gradient-top: #fbbe3b;
+@global-primary-gradient-bottom: #efb434;
+@global-success-gradient-top: #5eb25f;
+@global-success-gradient-bottom: #57a658;
+@global-warning-gradient-top: #fbbe3b;
+@global-warning-gradient-bottom: #efb434;
+@global-danger-gradient-top: #cb4d4d;
+@global-danger-gradient-bottom: #c54a4a;
+
+//
+// Box Shadow
+//
+
+@global-box-shadow: rgba(10, 20, 45, 0.12);
+@global-box-shadow-size: 0 1px 25px;
+
+//
+// Alert
+//
+
+@alert-color: @global-contrast-color;
+@alert-background: @global-default-background;
+@alert-success-background: @global-success-background;
+@alert-success-color: @global-contrast-color;
+@alert-warning-color: @global-contrast-color;
+@alert-danger-color: @global-contrast-color;
+@alert-warning-background: @global-warning-background;
+@alert-danger-background: @global-danger-background;
+
+//
+// Button
+//
+
+@button-primary-hover-background: darken(@button-primary-background, 5%);
+@button-primary-active-background: desaturate(darken(@button-primary-background, 7%), 3%);
+@button-success-hover-background: darken(@button-success-background, 2%);
+@button-success-active-background: darken(@button-success-hover-background, 2%);
+@button-danger-hover-background: darken(@button-danger-background, 2%);
+@button-danger-active-background: darken(@button-danger-hover-background, 2%);
+
+//
+// Button
+//
+
+@dropdown-box-shadow: rgba(10, 20, 45, 0.3);
+
+//
+// Form
+//
+
+@form-background: #fff;
+@form-border: rgba(0,0,0,0);
+@form-color: #676767;
+@form-focus-color: #676767;
+@form-placeholder-color: #676767;
+@form-success-background: @global-success-background;
+@form-success-color: fade(@global-contrast-color, 60%);
+@form-danger-color: fade(@global-contrast-color, 50%);
+@form-danger-background: @global-danger-background;
+@form-success-border: rgba(0,0,0,0);
+@form-danger-border: rgba(0,0,0,0);
+
+//
+// Grid
+//
+
+@grid-divider-box-shadow: none;
+@grid-divider-border: rgba(255,255,255,0.07);
+
+//
+// Icon
+//
+
+@icon-button-hover-background: lighten(@global-light-background, 3%);
+@icon-button-active-background: @global-light-background;
+
+//
+// Panel
+//
+
+@panel-box-primary-bg-image: none;
+@panel-box-secondary-bg-image: none;
+@panel-box-primary-background: rgba(45, 55, 70, 0.25);
+@panel-box-primary-inner-box-shadow: rgba(0, 0, 0, 0);
+@panel-box-primary-top-box-shadow: rgba(0, 0, 0, 0);
+@panel-box-secondary-background: rgba(45, 55, 70, 0.5);
+@panel-box-primary-nav-side-item-border: rgba(255, 255, 255, 0.07);
+@panel-box-primary-nav-side-item-box-shadow: rgba(0, 0, 0, 0);
+@panel-box-secondary-top-box-shadow: rgba(0, 0, 0, 0);
+@panel-box-secondary-inner-box-shadow: rgba(0, 0, 0, 0);
+@panel-box-secondary-nav-side-item-border: rgba(255, 255, 255, 0.07);
+@panel-box-secondary-nav-side-item-box-shadow: rgba(0, 0, 0, 0);
+@panel-box-primary-form-border: rgba(255,255,255,0.10);
+@panel-box-primary-form-background: rgba(45,55,70,0.15);
+@panel-box-primary-form-focus-border: rgba(255,255,255,0.20);
+@panel-box-primary-nav-side-hover-background: rgba(0,0,0,0.03);
+
+//
+// Navbar
+//
+
+@navbar-bg-image: none;
+@navbar-background: rgba(45, 55, 70, 0.25);
+@navbar-inner-box-shadow: rgba(0, 0, 0, 0);
+@navbar-top-box-shadow: rgba(0, 0, 0, 0);
+@navbar-nav-item-box-shadow: rgba(0, 0, 0, 0);
+@navbar-nav-item-border: rgba(255, 255, 255, 0.07);
+@navbar-nav-hover-background: rgba(0,0,0,0.03);
+@navbar-nav-active-background: rgba(0,0,0,0.03);
+
+//
+// Table
+//
+
+@table-hover-background: lighten(@global-light-background, 3%);
+
+//
+// Addon: Datepicker
+//
+
+@datepicker-table-active-background: @global-primary-background;
+
+
+// Theme global variables
+// ==========================================================================
+
+@theme_global-body-style: 'ocean';
+@theme_icon-muted-color: #424f60;
+@theme_widgetkit-style: 'dark';
+@theme_navbar-sticky-background: @global-background;

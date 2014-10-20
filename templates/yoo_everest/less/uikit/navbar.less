@@ -1,0 +1,122 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Navbar
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@navbar-background:                             rgba(255,255,255,0.1);
+@navbar-color:                                  @global-light-color;
+@navbar-link-color:                             @global-link-color;
+@navbar-link-hover-color:                       @global-link-hover-color;
+
+@navbar-nav-height:                             70px;
+@navbar-nav-line-height:                        @navbar-nav-height;
+@navbar-nav-padding-horizontal:                 25px;
+@navbar-nav-color:                              @navbar-color;
+@navbar-nav-font-size:                          @global-font-size;
+@navbar-nav-font-weight:                        300;
+@navbar-nav-font-family:                        'Roboto';
+@navbar-nav-hover-background:                   rgba(0,0,0,0.02);
+@navbar-nav-hover-color:                        @navbar-color;
+@navbar-nav-onclick-background:                 rgba(0,0,0,0);
+@navbar-nav-onclick-color:                      @navbar-color;
+@navbar-nav-active-background:                  @navbar-nav-hover-background;
+@navbar-nav-active-color:                       @navbar-color;
+
+@navbar-brand-font-size:                        round((@global-font-size * 1.28)); // 18px
+@navbar-brand-color:                            @navbar-color;
+@navbar-brand-hover-color:                      @navbar-brand-color;
+
+@navbar-toggle-font-size:                       round((@global-font-size * 1.28)); // 18px
+@navbar-toggle-color:                           @global-light-color;
+@navbar-toggle-hover-color:                     @global-light-color;
+
+//
+// New
+//
+
+@navbar-box-shadow-size:                         @panel-box-primary-box-shadow-size;
+@navbar-box-shadow:                             @panel-box-primary-box-shadow;
+@navbar-inner-box-shadow:                       rgba(255,255,255,0.15);
+@navbar-top-box-shadow:                         rgba(255,255,255,0.12);
+@navbar-text-shadow:                            @global-text-shadow;
+@navbar-bg-image:                               url('@{global-image-path}/@{global-style}/panel-box-noise-bg.png');
+
+@navbar-nav-item-border:                        rgba(0,0,0,0.1);
+@navbar-nav-item-box-shadow:                    rgba(255,255,255,0.12);
+@navbar-nav-text-transform:                     uppercase;
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() {
+
+    background-image: @navbar-bg-image;
+
+    box-shadow: @navbar-box-shadow-size @navbar-box-shadow,
+                inset 0 0 1px @navbar-inner-box-shadow,
+                inset 0 1px 0 @navbar-top-box-shadow;
+
+}
+
+
+// Sub-object: `uk-navbar-nav`
+// ========================================================================
+
+.hook-navbar-nav() {
+
+    border-right: 1px solid @navbar-nav-item-border;
+    box-shadow: 1px 0 0 @navbar-nav-item-box-shadow;
+    text-shadow: 0 1px 1px @navbar-text-shadow;
+    text-transform: @navbar-nav-text-transform;
+
+}
+
+// Hover
+.hook-navbar-nav-hover() {}
+
+// OnClick
+.hook-navbar-nav-onclick() {}
+
+// Active
+.hook-navbar-nav-active() {}
+
+
+// Sub-object: `uk-navbar-content`
+// ========================================================================
+
+.hook-navbar-content() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-navbar-misc() {
+
+    // Sub-object: `uk-navbar-nav`
+    // ========================================================================
+
+    .uk-navbar > .uk-navbar-nav:first-child > li:first-child > a {
+        border-left-width: 0;
+        box-shadow: 1px 0 0 @navbar-nav-item-box-shadow;
+    }
+
+    .uk-navbar-flip > .uk-navbar-nav > li:last-child > a {
+        border-right-width: 0;
+        box-shadow: none;
+    }
+
+    .uk-navbar-brand + .uk-navbar-nav > li:first-child > a,
+    .uk-navbar-flip > .uk-navbar-nav > li:first-child > a {
+        border-left: 1px solid @navbar-nav-item-border;
+        box-shadow: 1px 0 0 @navbar-nav-item-box-shadow,
+                    inset 1px 0 0 @navbar-nav-item-box-shadow;
+    }
+
+}

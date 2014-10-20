@@ -1,0 +1,25 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* ========================================================================
+   Defines styles for Internet Explorer 9
+ ========================================================================== */
+
+/* Form select
+ ========================================================================== */
+
+.tm-form-select:before {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+/* Overlay Blur
+ ========================================================================== */
+
+.tm-overlay-blur .uk-overlay-area > img { -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)"; }

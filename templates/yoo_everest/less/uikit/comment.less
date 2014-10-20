@@ -1,0 +1,101 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Comment
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@comment-header-margin-bottom:                  @global-margin;
+
+@comment-avatar-margin-right:                   @global-margin;
+
+@comment-title-font-size:                       round((@global-font-size * 1.14)); // 16px
+@comment-title-line-height:                     round((@comment-title-font-size * 1.37)); // 22px
+
+@comment-meta-color:                            @global-color;
+@comment-meta-font-size:                        round((@global-font-size * 0.78)); // 11px
+@comment-meta-line-height:                      round((@comment-meta-font-size * 1.45)); // 16px
+
+@comment-list-margin-top:                       @global-margin + 10px;
+
+//
+// New
+//
+
+@comment-header-padding:                        10px;
+@comment-header-border:                         @global-border;
+@comment-header-background:                     @global-light-background;
+
+@comment-primary-header-border:                 fade(@global-default-background, 20%);
+@comment-primary-header-background:             fade(@global-default-background, 10%);
+
+
+// Component
+// ==========================================================================
+
+.hook-comment() {}
+
+
+// Sub-object `uk-comment-header`
+// ========================================================================
+
+.hook-comment-header() {
+    padding: @comment-header-padding;
+    border: 1px solid @comment-header-border;
+    background: @comment-header-background;
+}
+
+
+// Sub-object `uk-comment-avatar`
+// ========================================================================
+
+.hook-comment-avatar() {}
+
+
+// Sub-object `uk-comment-title`
+// ========================================================================
+
+.hook-comment-title() {}
+
+
+// Sub-object `uk-comment-meta`
+// ========================================================================
+
+.hook-comment-meta() {}
+
+
+// Modifier `uk-comment-primary`
+// ========================================================================
+
+.hook-comment-primary() {
+
+    .uk-comment-header {
+        background: @comment-primary-header-background;
+        border-color: @comment-primary-header-border;
+    }
+
+}
+
+
+// Sub-object `uk-comment-body`
+// ========================================================================
+
+.hook-comment-body() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-comment-misc() {
+
+    /* Sub-object `uk-comment-body` */
+    .uk-comment-body {
+        padding-right: @comment-header-padding;
+        padding-left: @comment-header-padding;
+    }
+
+}

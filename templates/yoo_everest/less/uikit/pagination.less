@@ -1,0 +1,67 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Pagination
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@pagination-padding-vertical:                   5px;
+@pagination-padding-horizontal:                 7px;
+@pagination-line-height:                        @global-line-height;
+@pagination-background:                         @global-background;
+@pagination-color:                              @global-color;
+@pagination-hover-color:                        @global-link-color;
+@pagination-hover-background:                   @global-background;
+@pagination-onclick-background:                 @global-light-background;
+@pagination-onclick-color:                      @pagination-hover-color;
+
+@pagination-active-background:                  @global-background;
+@pagination-active-color:                       @pagination-hover-color;
+
+@pagination-disabled-background:                @global-background;
+@pagination-disabled-color:                     @global-muted-color;
+
+//
+// New
+//
+
+@pagination-box-shadow-size:                    @global-box-shadow-size;
+@pagination-box-shadow:                         @global-box-shadow;
+
+
+// Component
+// ========================================================================
+
+.hook-pagination-item() { box-shadow: @pagination-box-shadow-size @pagination-box-shadow; }
+
+
+// Items
+// ========================================================================
+
+.hook-pagination-link() {}
+
+.hook-pagination-link-hover() {}
+
+.hook-pagination-link-active() {}
+
+//
+// Active
+//
+
+.hook-pagination-active() { box-shadow: @pagination-box-shadow-size @pagination-box-shadow; }
+
+//
+// Disabled
+//
+
+.hook-pagination-disabled() { box-shadow: @pagination-box-shadow-size @pagination-box-shadow; }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-pagination-misc() {}

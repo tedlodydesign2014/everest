@@ -1,0 +1,57 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* Navigation
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideshow-everest .nav {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 10px;
+	z-index: 2;
+}
+
+.wk-slideshow-everest .nav li { margin-top: 7px; }
+.wk-slideshow-everest .nav li:first-child { margin-top: 0; }
+
+.wk-slideshow-everest .nav span {
+	width: 10px;
+	height: 10px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.wk-slideshow-everest .nav span:hover { background-color: #e38f71; }
+.wk-slideshow-everest .nav .active span { background-color: #e38f71; }
+
+/* Buttons
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideshow-everest > div { position: relative; }
+
+.wk-slideshow-everest > div .next,
+.wk-slideshow-everest > div .prev {
+	bottom: 30px;
+	width: 25px;
+	height: 25px;
+	background-color: #e38f71;
+}
+
+.wk-slideshow-everest > div .next:after,
+.wk-slideshow-everest > div .prev:after {
+	text-align: center;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	font-size: 18px;
+	color: #fff;
+	font-family: 'FontAwesome'
+}
+
+.wk-slideshow-everest > div .next:hover,
+.wk-slideshow-everest > div .prev:hover { background-color: #e38f71; }
+
+.wk-slideshow-everest > div .next { right: 30px; }
+.wk-slideshow-everest > div .prev { right: 65px; }
+
+.wk-slideshow-everest > div .next:after { content: "\f105"; }
+.wk-slideshow-everest > div .prev:after { content: "\f104"; }

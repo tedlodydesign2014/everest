@@ -1,0 +1,62 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Off-canvas
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@offcanvas-z-index:                             @global-z-index;
+
+@offcanvas-bar-background:                      @global-background;
+
+@offcanvas-panel-margin:                        20px;
+@offcanvas-panel-color:                         @global-color;
+@offcanvas-panel-title-color:                   @global-color;
+@offcanvas-panel-link-color:                    @global-link-color;
+@offcanvas-panel-link-hover-color:              @global-link-hover-color;
+
+
+// Component
+// ========================================================================
+
+.hook-offcanvas() {}
+
+
+// Sub-object `uk-offcanvas-bar`
+// ========================================================================
+
+.hook-offcanvas-bar() {}
+
+
+// Panel in offcanvas
+// ========================================================================
+
+.hook-offcanvas-panel() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-offcanvas-misc() {
+
+	.uk-offcanvas-bar:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0 0 7px 3px rgba(0,0,0,0.2);
+    }
+
+    .uk-offcanvas-bar-flip:after {
+        right: auto;
+        left: 0;
+        box-shadow: 0 0 7px 3px rgba(0,0,0,0.2);
+    }
+
+}

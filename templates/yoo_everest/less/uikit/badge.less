@@ -1,0 +1,98 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Badge
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@badge-background:                              @global-default-background;
+@badge-padding-horizontal:                      10px;
+@badge-font-size:                               round((@global-font-size * 0.71)); // 10px
+@badge-font-weight:                             300;
+@badge-line-height:                             round((@badge-font-size * 1.4)); // 14px
+@badge-color:                                   @global-contrast-color;
+@badge-text-transform:                          uppercase;
+
+@badge-notification-font-size:                  round((@global-font-size * 0.85)); // 12px
+@badge-notification-line-height:                round((@badge-notification-font-size * 1.5)); // 18px
+
+@badge-success-background:                      @global-success-background;
+@badge-warning-background:                      @global-warning-background;
+@badge-danger-background:                       @global-danger-background;
+
+//
+// New
+//
+
+@badge-padding-notification-horizontal:         8px;
+@badge-padding-notification-vertical:         	2px;
+
+@badge-gradient-top:                            @global-default-gradient-top;
+@badge-gradient-bottom:                         @global-default-gradient-bottom;
+
+@badge-success-gradient-top:                    @global-success-gradient-top;
+@badge-success-gradient-bottom:                 @global-success-gradient-bottom;
+
+@badge-warning-gradient-top:                    @global-warning-gradient-top;
+@badge-warning-gradient-bottom:                 @global-warning-gradient-bottom;
+
+@badge-danger-gradient-top:                     @global-danger-gradient-top;
+@badge-danger-gradient-bottom:                  @global-danger-gradient-bottom;
+
+
+// Component
+// ========================================================================
+
+.hook-badge() {
+	padding: 5px @badge-padding-horizontal;
+	background-image: -webkit-linear-gradient(top, @badge-gradient-top, @badge-gradient-bottom);
+    background-image: linear-gradient(to bottom, @badge-gradient-top, @badge-gradient-bottom);
+}
+
+
+// Color modifier
+// ========================================================================
+
+//
+// Modifier: `bagde-success`
+//
+
+.hook-badge-success() {
+	background-image: -webkit-linear-gradient(top, @badge-success-gradient-top, @badge-success-gradient-bottom);
+    background-image: linear-gradient(to bottom, @badge-success-gradient-top, @badge-success-gradient-bottom);
+}
+
+//
+// Modifier: `badge-warning`
+//
+
+.hook-badge-warning() {
+	background-image: -webkit-linear-gradient(top, @badge-warning-gradient-top, @badge-warning-gradient-bottom);
+    background-image: linear-gradient(to bottom, @badge-warning-gradient-top, @badge-warning-gradient-bottom);
+}
+
+//
+// Modifier: `badge-danger`
+//
+
+.hook-badge-danger() {
+	background-image: -webkit-linear-gradient(top, @badge-danger-gradient-top, @badge-danger-gradient-bottom);
+    background-image: linear-gradient(to bottom, @badge-danger-gradient-top, @badge-danger-gradient-bottom);
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-badge-misc() {
+
+    /* Modifier: `uk-badge-notification`;
+ 	========================================================================== */
+
+	.uk-badge-notification { padding: @badge-padding-notification-vertical @badge-padding-notification-horizontal; }
+
+}
